@@ -1,0 +1,19 @@
+# Ignora arquivos gerados pela IDE
+.vs
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Compilados
+*.exe
+*.obj
+*.o
+*.out
+
+# Diretórios padrão de build
+build/
+Debug/
+Release/
+x64/
+x86/
