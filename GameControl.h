@@ -2,8 +2,8 @@
 class GameControl
 {
 private:
-	int ResLarg;
-	int ResAlt;
+	int ResLarg = 96;
+	int ResAlt = 52;
 
 public:
 	void FluxoGame();
