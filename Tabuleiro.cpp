@@ -1,6 +1,8 @@
 #include "Tabuleiro.h"
 #include "vector"
 #include "raylib.h"
+#include <random>
+#include <iostream>
 
 //resposavel por se informar qual será o tamanho do tabuleiro
 Tabuleiro::Tabuleiro(int LargRes, int AltRes)
@@ -51,8 +53,15 @@ void Tabuleiro::ImprimirTab()
 			else if (Celulas[i][j] == 3) 
 			{
 				DrawRectangle(i * 10, j * 10, 10, 10, RED);
-			}
+
+			}else{}
 		}
 	}
 }
+
+std::vector<std::vector<int>> Tabuleiro::GetCelulas()
+{
+	return Celulas;
+}
+
 

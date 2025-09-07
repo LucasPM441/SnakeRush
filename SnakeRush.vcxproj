@@ -125,11 +125,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="GameControl.h" />
+    <ClInclude Include="Personagem.h" />
     <ClInclude Include="Tabuleiro.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameControl.cpp" />
     <ClCompile Include="Master.cpp" />
+    <ClCompile Include="Personagem.cpp" />
     <ClCompile Include="Tabuleiro.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
