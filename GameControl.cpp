@@ -22,7 +22,11 @@ void GameControl::FluxoGame()
 
 		BeginDrawing();
 		ClearBackground(GREEN);
+
+		//atualiza o tabuleiro.
 		Tab.ImprimirTab();
+
+		//atualiza o movimento do personagem.
 		Cobra.AtlzSnake();
 		Cobra.MovInput();
 		if(countTime.count() >= 100)

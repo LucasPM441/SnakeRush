@@ -14,7 +14,7 @@ Tabuleiro::Tabuleiro(int LargRes, int AltRes)
 //resposanvel por construir o tabuleiro
 void Tabuleiro::InitTab()
 {
-	Celulas = std::vector<std::vector<int>>(ResX, std::vector<int>(ResY, 0));
+	Celulas = std::vector<std::vector<int>>(ResX, std::vector<int>(ResY, 1));
 
 	//geração do padrão do tabuleiro
 	for (int i = 0; i < ResX; i++)
@@ -59,6 +59,7 @@ void Tabuleiro::ImprimirTab()
 	}
 }
 
+//é um getter.
 std::vector<std::vector<int>> Tabuleiro::GetCelulas()
 {
 	return Celulas;
